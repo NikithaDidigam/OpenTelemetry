@@ -1,0 +1,15 @@
+server:
+  port: 8080
+priceClient:
+  baseUrl: http://price-service:8080
+
+spring:
+  application:
+    name: product-service
+  sleuth:
+    otel:
+      config:
+        trace-id-ratio-based: 1.0
+      exporter:
+        otlp:
+          endpoint: http://sleuth:4317
