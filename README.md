@@ -1,6 +1,14 @@
-# Spring tracing with OpenTelemetry and Jaeger
+# Distributed Tracing in Microservices using OpenTelemetry and Jaeger
 
-Repository created for the purpose of the blog post on the https://qdnqn.com/opentelemetry-spring-boot-kafka-and-jaeger-in-action/.
+- mvn clean build each individual microservices 
+- Run the docker-compose to spin up all microservices, Sleuth and Jaeger services
 
-If you are interested in more detail about the tracing with the OpenTelemetry
-using Spring boot reffer to the article at the link above.
+## Test the below endpoints
+GET
+http://localhost:8080/users/3229/generateReport
+
+GET
+http://localhost:8082/product/100003
+
+## Jaeger URL
+http://localhost:16686/
