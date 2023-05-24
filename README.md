@@ -1,5 +1,9 @@
 # Distributed Tracing in Microservices using OpenTelemetry and Jaeger
 
+## What is Opentelemetry
+https://opentelemetry.io/docs/
+
+## Step to set up this project
 - mvn clean build each individual microservices 
 - Run the docker-compose to spin up all microservices, Sleuth and Jaeger services
 
